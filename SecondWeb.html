@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Document</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } 
+        .main{
+            width: 100%;
+        }
+        .navbar{
+            width: 100%;
+            display: flex;
+            border: 5px solid black;
+            background-color: rgb(105, 213, 141);
+            padding-block: 30px; 
+
+        }
+        .logo{
+            width: 25%;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style: italic;
+            margin-left: -20px;
+            color: rgb(60, 0, 255);
+            
+        }
+        .menu{
+            width: 60%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: sans-serif;
+            font-weight: bolder;
+        }
+        .menu a{
+            color: rgb(0, 0, 0);
+            text-decoration: underline;
+            text-decoration-style: wavy;
+        }
+        .menu button a{
+            text-decoration: none;
+        }
+        .menu button{
+            border-radius: 10px;
+            border: 2px solid black;
+            font-size: large;
+            font-style: oblique;
+            background-image: linear-gradient(rgb(0, 157, 255));
+        }
+        .image{
+            border: 5px solid black;
+        }
+          .cards{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .card{
+            flex: 1 1 calc(33.333% - 20px);
+            display: flex;
+            flex-direction: column;
+        }
+        .card-body{
+            width: 100%;
+            background-color: black;
+            color: white;
+            border: 2px solid rgb(0, 255, 149);
+            text-align: center;
+        }
+        .card-img-top{
+            width: 100%;
+            display: block;
+            border: 2px solid rgb(0, 255, 149);
+        }
+        .btn-primary{
+            text-decoration: none;
+            color: rgb(0, 157, 255);
+            font-weight: bolder;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="logo">
+             <h1 class="animate__animated animate__jello">AFHAM WEB</h1>
+            </div>
+            <div class="menu">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="#add">Add to cart</a>
+                <a href="">Contact</a>
+                <button><a href="login.html">Login</a></button>
+                <button><a href="SignUp.html">SignUp</a></button>
+            </div>
+        </div>
+        <div class="image">
+            <img src="https://live.staticflickr.com/374/18996738599_17ed3248a0_h.jpg" alt="" width="100%" height="700px">
+        </div>
+      
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+               <img src="https://cdn.shopify.com/s/files/1/0003/5815/4293/files/Green.png?v=1788351731" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title">Rolex Watch</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p><br>
+               <a href="" id="add" class="btn-primary">Add To Card</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+               <img src="https://cdn.shopify.com/s/files/1/0003/5815/4293/files/Green.png?v=1788351731" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title">Rolex Watch</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p><br>
+               <a href="" id="add" class="btn-primary">Add To Card</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+               <img src="https://cdn.shopify.com/s/files/1/0003/5815/4293/files/Green.png?v=1788351731" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title">Rolex Watch</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p><br>
+               <a href="" id="add" class="btn-primary">Add To Card</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+               <img src="https://cdn.shopify.com/s/files/1/0003/5815/4293/files/Green.png?v=1788351731" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title">Rolex Watch</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p><br>
+               <a href="" id="add" class="btn-primary">Add To Card</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+               <img src="https://cdn.shopify.com/s/files/1/0003/5815/4293/files/Green.png?v=1788351731" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title">Rolex Watch</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p><br>
+               <a href="" id="add" class="btn-primary">Add To Card</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+               <img src="https://cdn.shopify.com/s/files/1/0003/5815/4293/files/Green.png?v=1788351731" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title">Rolex Watch</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p><br>
+               <a href="" id="add" class="btn-primary">Add To Card</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+               <img src="https://cdn.shopify.com/s/files/1/0003/5815/4293/files/Green.png?v=1788351731" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title">Rolex Watch</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p><br>
+               <a href="" id="add" class="btn-primary">Add To Card</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+               <img src="https://cdn.shopify.com/s/files/1/0003/5815/4293/files/Green.png?v=1788351731" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title">Rolex Watch</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p><br>
+               <a href="" id="add" class="btn-primary">Add To Card</a>
+            </div>
+          </div>
+
+             <div class="card" style="width: 18rem;">
+               <img src="https://cdn.shopify.com/s/files/1/0003/5815/4293/files/Green.png?v=1788351731" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title">Rolex Watch</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p><br>
+               <a href="" id="add" class="btn-primary">Add To Card</a>
+            </div>
+          </div>
+
+             <div class="card" style="width: 18rem;">
+               <img src="https://cdn.shopify.com/s/files/1/0003/5815/4293/files/Green.png?v=1788351731" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title">Rolex Watch</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p><br>
+               <a href="" id="add" class="btn-primary">Add To Card</a>
+            </div>
+          </div>
+
+             <div class="card" style="width: 18rem;">
+               <img src="https://cdn.shopify.com/s/files/1/0003/5815/4293/files/Green.png?v=1788351731" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title">Rolex Watch</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p><br>
+               <a href="" id="add" class="btn-primary">Add To Card</a>
+            </div>
+          </div>
+
+             <div class="card" style="width: 18rem;">
+               <img src="https://cdn.shopify.com/s/files/1/0003/5815/4293/files/Green.png?v=1788351731" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title">Rolex Watch</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p><br>
+               <a href="" id="add" class="btn-primary">Add To Card</a>
+            </div>
+          </div>
+
+             <div class="card" style="width: 18rem;">
+               <img src="https://cdn.shopify.com/s/files/1/0003/5815/4293/files/Green.png?v=1788351731" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title">Rolex Watch</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p><br>
+               <a href="" id="add" class="btn-primary">Add To Card</a>
+            </div>
+          </div>
+
+             <div class="card" style="width: 18rem;">
+               <img src="https://cdn.shopify.com/s/files/1/0003/5815/4293/files/Green.png?v=1788351731" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title">Rolex Watch</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p><br>
+               <a href="" id="add" class="btn-primary">Add To Card</a>
+            </div>
+          </div>
+
+             <div class="card" style="width: 18rem;">
+               <img src="https://cdn.shopify.com/s/files/1/0003/5815/4293/files/Green.png?v=1788351731" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title">Rolex Watch</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p><br>
+               <a href="" id="add" class="btn-primary">Add To Card</a>
+            </div>
+          </div>
+
+             <div class="card" style="width: 18rem;">
+               <img src="https://cdn.shopify.com/s/files/1/0003/5815/4293/files/Green.png?v=1788351731" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title">Rolex Watch</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p><br>
+               <a href="" id="add" class="btn-primary">Add To Card</a>
+            </div>
+          </div>
+
+             <div class="card" style="width: 18rem;">
+               <img src="https://cdn.shopify.com/s/files/1/0003/5815/4293/files/Green.png?v=1788351731" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title">Rolex Watch</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p><br>
+               <a href="" id="add" class="btn-primary">Add To Card</a>
+            </div>
+          </div>
+
+             <div class="card" style="width: 18rem;">
+               <img src="https://cdn.shopify.com/s/files/1/0003/5815/4293/files/Green.png?v=1788351731" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title">Rolex Watch</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p><br>
+               <a href="" id="add" class="btn-primary">Add To Card</a>
+            </div>
+          </div>
+
+             <div class="card" style="width: 18rem;">
+               <img src="https://cdn.shopify.com/s/files/1/0003/5815/4293/files/Green.png?v=1788351731" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title">Rolex Watch</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p><br>
+               <a href="" id="add" class="btn-primary">Add To Card</a>
+            </div>
+          </div>
+
+             <div class="card" style="width: 18rem;">
+               <img src="https://cdn.shopify.com/s/files/1/0003/5815/4293/files/Green.png?v=1788351731" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title">Rolex Watch</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p><br>
+               <a href="" id="add" class="btn-primary">Add To Card</a>
+            </div>
+          </div>
+        </div>
+
+    </div>
+</body>
+</html>
+

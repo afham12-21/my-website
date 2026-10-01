@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+      <h1>SignUp</h1>
+      <input type="text" name="" id="name" placeholder="Enter Your Full Name"><br><br>
+      <input type="email" name="" id="email" placeholder="Enter Your Email"><br><br>
+      <input type="password" name="" id="password" placeholder="Enter Your Password"><br><br>
+      <Button onclick="signup()">Login</Button>
+    </div>
+
+    <script>
+ function signup() {
+           
+           let name = document.getElementById('name').value 
+           let email = document.getElementById('email').value
+           let password = document.getElementById('password').value
+           console.log(name,email,password);
+        
+           if (name === "" && email === "" && password === "") {
+            alert("Please Fill This Input")
+           } else {
+            alert("Signup Successfully");
+           }
+           localStorage.setItem("Name",name)
+           localStorage.setItem("Email",email)
+           localStorage.setItem("Password",password)
+        }
+    </script>
+</body>
+</html>

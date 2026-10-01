@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+      <h1>Login</h1>
+      <input type="email" name="" id="email" placeholder="Enter Your Email"><br><br>
+      <input type="password" name="" id="password" placeholder="Enter Your Password"><br><br>
+      <Button onclick="login()">Login</Button>
+    </div>
+
+    <script>
+ function login() {
+
+           let email = document.getElementById('email').value
+           let password = document.getElementById('password').value
+           console.log(email,password);
+        
+           if (email === "" && password === "") {
+            alert("Invalid Email or Password")
+           } else {
+            alert("Login Successfully");
+           }
+           localStorage.setItem("Email",email)
+           localStorage.setItem("Password",password)
+        }
+    </script>
+</body>
+</html>

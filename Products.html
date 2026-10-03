@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fake Store Products</title>
+  <title>My Products</title>
 
   <style>
     * {
@@ -155,7 +155,7 @@
       })
       .catch(error => {
         document.getElementById('products').innerHTML =
-          '<p class="loading">Products load nahi ho sake.</p>';
+          '<p class="loading">Products Could Not Be Loaded.</p>';
 
         console.error(error);
       });

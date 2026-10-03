@@ -1,41 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .main{
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-    <div class="main">
-      <h1>SignUp</h1>
-      <input type="text" name="" id="name" placeholder="Enter Your Full Name"><br><br>
-      <input type="email" name="" id="email" placeholder="Enter Your Email"><br><br>
-      <input type="password" name="" id="password" placeholder="Enter Your Password"><br><br>
-      <Button onclick="signup()">Login</Button>
-    </div>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
 
-    <script>
- function signup() {
-           
-           let name = document.getElementById('name').value 
-           let email = document.getElementById('email').value
-           let password = document.getElementById('password').value
-           console.log(name,email,password);
-        
-           if (name === "" && email === "" && password === "") {
-            alert("Please Fill This Input")
-           } else {
-            alert("Signup Successfully");
-           }
-           localStorage.setItem("Name",name)
-           localStorage.setItem("Email",email)
-           localStorage.setItem("Password",password)
-        }
-    </script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f2f4f7;
+    }
+
+    .signup-box {
+      width: 360px;
+      padding: 30px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .signup-box h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      color: #555;
+      font-size: 14px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 11px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      outline: none;
+      font-size: 14px;
+    }
+
+    .form-group input:focus {
+      border-color: #007bff;
+    }
+
+    .signup-btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      background: #007bff;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .signup-btn:hover {
+      background: #0056b3;
+    }
+
+    .login-text {
+      text-align: center;
+      margin-top: 18px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .login-text a {
+      color: #007bff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="signup-box">
+    <h2>Create Account</h2>
+
+    <form>
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+      </div>
+
+      <div class="form-group">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+      </div>
+
+      <button type="submit" class="signup-btn">Sign Up</button>
+    </form>
+
+   
+  </div>
+
 </body>
 </html>

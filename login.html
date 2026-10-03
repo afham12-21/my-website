@@ -1,38 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .main{
-            text-align: center;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f2f4f7;
+    }
+
+    .login-box {
+      width: 360px;
+      padding: 30px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .login-box h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      color: #555;
+      font-size: 14px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 11px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      outline: none;
+      font-size: 14px;
+    }
+
+    .form-group input:focus {
+      border-color: #007bff;
+    }
+
+    .forgot-password {
+      display: block;
+      text-align: right;
+      margin-top: -8px;
+      margin-bottom: 18px;
+      color: #007bff;
+      font-size: 13px;
+      text-decoration: none;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      background: #007bff;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .login-btn:hover {
+      background: #0056b3;
+    }
+
+    .signup-text {
+      text-align: center;
+      margin-top: 18px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .signup-text a {
+      color: #007bff;
+      text-decoration: none;
+    }
+  </style>
 </head>
+
 <body>
-    <div class="main">
-      <h1>Login</h1>
-      <input type="email" name="" id="email" placeholder="Enter Your Email"><br><br>
-      <input type="password" name="" id="password" placeholder="Enter Your Password"><br><br>
-      <Button onclick="login()">Login</Button>
-    </div>
 
-    <script>
- function login() {
+  <div class="login-box">
+    <h2>Welcome Back</h2>
 
-           let email = document.getElementById('email').value
-           let password = document.getElementById('password').value
-           console.log(email,password);
-        
-           if (email === "" && password === "") {
-            alert("Invalid Email or Password")
-           } else {
-            alert("Login Successfully");
-           }
-           localStorage.setItem("Email",email)
-           localStorage.setItem("Password",password)
-        }
-    </script>
+    <form>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        >
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter your password"
+          required
+        >
+      </div>
+
+      <a href="#" class="forgot-password">Forgot Password?</a>
+
+      <button type="submit" class="login-btn">Login</button>
+    </form>
+
+    <p class="signup-text">
+      Don't have an account?
+      <a href="signup.html">Sign Up</a>
+    </p>
+  </div>
+
 </body>
 </html>

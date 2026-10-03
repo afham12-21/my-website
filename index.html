@@ -20,6 +20,7 @@
         .navbar{
             width: 100%;
             display: flex;
+            justify-content: space-around;
             border: 5px solid black;
             background-color: rgb(105, 213, 141);
             padding-block: 30px; 
@@ -61,14 +62,13 @@
             border: 5px solid black;
         }
           .cards{
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
             flex-wrap: wrap;
-            padding: 20px;
+            gap: 70px;
         }
         .card{
-            flex: 1 1 calc(33.333% - 20px);
             display: flex;
             flex-direction: column;
         }
